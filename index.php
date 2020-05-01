@@ -14,7 +14,7 @@
     $pastas = [];
     $cont = 0;
     while($arquivo = $diretorio -> read()){
-        if($arquivo!="css"&&$arquivo!=".."&&$arquivo!="."){
+        if($arquivo!="css"&&$arquivo!=".."&&$arquivo!="."&&$arquivo!="index.php"){
             echo '<div id="botao"><a href="./'.$arquivo.'">'.$arquivo.'</a></div>';
         }
     }
