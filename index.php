@@ -9,13 +9,13 @@
 </html>
 
 <?php
-    $path = "../";
+    $path = "./";
     $diretorio = dir($path);
     $pastas = [];
     $cont = 0;
     while($arquivo = $diretorio -> read()){
         if($arquivo!="css"&&$arquivo!=".."&&$arquivo!="."){
-            echo '<a href="./'.$arquivo.'">'.$arquivo.'</a>';
+            echo '<div id="botao"><a href="./'.$arquivo.'">'.$arquivo.'</a></div>';
         }
     }
     $diretorio -> close();

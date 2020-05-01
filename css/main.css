@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+#botao{
+    margin-top: 15px;
+    margin-left: 5px;
+}
+#botao a{
+    border: 2px solid #000;
+    background-color: aqua;
+    padding: 5px;
+    text-decoration: none;
+    color: #000;
+}
