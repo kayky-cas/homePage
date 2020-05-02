@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>HOME</title>
@@ -9,14 +9,20 @@
 </html>
 
 <?php
-    $path = "./";
-    $diretorio = dir($path);
-    $pastas = [];
-    $cont = 0;
-    while($arquivo = $diretorio -> read()){
-        if($arquivo!="css"&&$arquivo!=".."&&$arquivo!="."&&$arquivo!="index.php"){
-            echo '<div id="botao"><a href="./'.$arquivo.'">'.$arquivo.'</a></div>';
+    session_start();
+    if ($_SESSION['email'] == "kbelleboni@gmail.com") {
+        $path = "./";
+        $diretorio = dir($path);
+        $pastas = [];
+        $cont = 0;
+        while($arquivo = $diretorio -> read()){
+            if($arquivo!="css"&&$arquivo!=".."&&$arquivo!="."&&$arquivo!="index.php"){
+                echo '<div id="botao"><a href="./'.$arquivo.'">'.$arquivo.'</a></div>';
+            }
         }
+        $diretorio -> close(); 
     }
-    $diretorio -> close();
+    else{
+        header('Location: ./login/');
+    }
 ?>
