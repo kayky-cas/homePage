@@ -1,17 +1,92 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: helvetica;
+html {
+  background-color: #56baed;
 }
-#botao{
-    margin-top: 15px;
-    margin-left: 5px;
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
 }
-#botao a{
-    border: 2px solid #000;
-    background-color: aqua;
-    padding: 5px;
-    text-decoration: none;
-    color: #000;
+
+
+#titulo{ 
+  color: #FFFF;
 }
+header{
+  background-color: rgba(0, 0, 0, 0.8);
+  border-top: 1px solid #dce8f1;
+  text-align: center;
+  -webkit-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+}
+.centralizar {
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+}
+
+#corpo {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  padding: 30px;
+  width: 90%;
+  max-width: 450px;
+  position: relative;
+  padding: 0px;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: 1px solid #dce8f1;
+  margin-top: 20px;
+  padding: 25px;
+  text-align: center;
+  -webkit-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+a{
+  color: #FFFF;
+  text-decoration: none;
+}
+
+a{
+  background-color: rgba(0,0,0,0.9);
+  border: none;
+  padding: 15px 80px;
+  text-align: center;
+  display: inline-block;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(0,0,0,0.4);
+  box-shadow: 0 10px 30px 0 rgba(0,0,0,0.4);
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 5px 20px 20px 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  color: rgba(0,0,0,0.9);
+}
+
+a:active{
+  text-decoration: none;
+  -moz-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
